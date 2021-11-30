@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+#include "lib.h"
 
 int main(){
    int n=0;
