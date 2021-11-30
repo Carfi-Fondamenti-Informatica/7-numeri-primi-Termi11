@@ -2,8 +2,17 @@
 // Created by Giulio on 30/11/2021.
 //
 
-#ifndef ESERCIZIO7_LIB_H
-#define ESERCIZIO7_LIB_H
+#include "lib.h"
 
-#endif //ESERCIZIO7_LIB_H
-bool numeroprimo(int, int);
+bool numeroprimo(int n, int a){
+    if (n<0){
+        return false;
+    }else if (n==1) {
+        return true;
+    }else if (a==1){
+        return true;
+    }else if (n%a==0){
+        return false;
+    }
+    numeroprimo(n,--a);
+        }
